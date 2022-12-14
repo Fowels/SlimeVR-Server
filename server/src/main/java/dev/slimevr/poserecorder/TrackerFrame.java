@@ -95,6 +95,11 @@ public final class TrackerFrame implements Tracker {
 	}
 
 	@Override
+	public boolean getRawRotation(Quaternion store) {
+		return false;
+	}
+
+	@Override
 	public boolean getPosition(Vector3f store) {
 		if (hasData(TrackerFrameData.POSITION)) {
 			store.set(position);

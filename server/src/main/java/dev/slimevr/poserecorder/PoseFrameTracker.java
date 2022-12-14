@@ -151,6 +151,11 @@ public class PoseFrameTracker implements Tracker, Iterable<TrackerFrame> {
 	}
 
 	@Override
+	public boolean getRawRotation(Quaternion store) {
+		return false;
+	}
+
+	@Override
 	public boolean getPosition(Vector3f store) {
 		TrackerFrame frame = safeGetFrame();
 		if (frame != null && frame.hasData(TrackerFrameData.POSITION)) {

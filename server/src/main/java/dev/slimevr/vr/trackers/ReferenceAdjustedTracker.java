@@ -49,10 +49,14 @@ public class ReferenceAdjustedTracker<E extends Tracker> implements Tracker {
 	 */
 	@Override
 	public void resetFull(Quaternion reference) {
+		Quaternion rot = new Quaternion();
+		getRawRotation(rot);
+		((IMUTracker) tracker).calculateDrift(rot);
+
 		tracker.resetFull(reference);
 
 		Quaternion sensorRotation = new Quaternion();
-		tracker.getRotation(sensorRotation);
+		tracker.getRawRotation(sensorRotation);
 
 		fixGyroscope(sensorRotation.clone());
 		fixAttachment(sensorRotation.clone());
@@ -68,6 +72,10 @@ public class ReferenceAdjustedTracker<E extends Tracker> implements Tracker {
 	 */
 	@Override
 	public void resetYaw(Quaternion reference) {
+		Quaternion rot = new Quaternion();
+		getRawRotation(rot);
+		((IMUTracker) tracker).calculateDrift(rot);
+
 		tracker.resetYaw(reference);
 		fixYaw(reference);
 	}
@@ -88,7 +96,7 @@ public class ReferenceAdjustedTracker<E extends Tracker> implements Tracker {
 
 		// Get the current calibrated rotation
 		Quaternion buffer = new Quaternion();
-		tracker.getRotation(buffer);
+		tracker.getRawRotation(buffer);
 		gyroFix.mult(buffer, buffer);
 		buffer.multLocal(attachmentFix);
 
@@ -121,7 +129,7 @@ public class ReferenceAdjustedTracker<E extends Tracker> implements Tracker {
 		targetRotation.fromAngles(0, targetRotation.getYaw(), 0);
 
 		Quaternion sensorRotation = new Quaternion();
-		tracker.getRotation(sensorRotation);
+		tracker.getRawRotation(sensorRotation);
 		gyroFix.mult(sensorRotation, sensorRotation);
 		sensorRotation.multLocal(attachmentFix);
 		sensorRotation.multLocal(mountRotFix);
@@ -141,6 +149,13 @@ public class ReferenceAdjustedTracker<E extends Tracker> implements Tracker {
 	@Override
 	public boolean getRotation(Quaternion store) {
 		tracker.getRotation(store);
+		adjustInternal(store);
+		return true;
+	}
+
+	@Override
+	public boolean getRawRotation(Quaternion store) {
+		tracker.getRawRotation(store);
 		adjustInternal(store);
 		return true;
 	}

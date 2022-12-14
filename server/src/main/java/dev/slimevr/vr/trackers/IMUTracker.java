@@ -190,17 +190,28 @@ public class IMUTracker
 		}
 		// correction.mult(store, store); // Correction is not used now to
 		// prevent accidental errors while debugging other things
-		store.multLocal(rotAdjust);
-		// TODO before or after rotAdjust?
 		// TODO condition with config
+		float amt = 0.5f;
 		if (true) {
 			store
 				.slerpLocal(
-					store.mult(driftQuat),
-					(System.currentTimeMillis() - timeAtLastReset) / timeForLastReset
+					driftQuat.mult(store),
+					amt
+						* ((System.currentTimeMillis() - timeAtLastReset)
+							/ timeForLastReset)
 				);
 		}
+		store.multLocal(rotAdjust);
+		return true;
+	}
 
+	@Override
+	public boolean getRawRotation(Quaternion store) {
+		store.set(rotQuaternion);
+		// correction.mult(store, store); // Correction is not used now to
+		// prevent accidental errors while debugging other things
+		// TODO condition with config
+		store.multLocal(rotAdjust);
 		return true;
 	}
 
@@ -271,8 +282,6 @@ public class IMUTracker
 	 */
 	@Override
 	public void resetYaw(Quaternion reference) {
-		calculateDrift();
-
 		if (magCalibrationStatus >= CalibrationAccuracy.HIGH.status) {
 			magnetometerCalibrated = true;
 			// During calibration set correction to match magnetometer readings
@@ -283,25 +292,26 @@ public class IMUTracker
 	}
 
 	/**
-	 * Calculates drift since last reset and store the data related to it in
+	 * Calculates 1 since last reset and store the data related to it in
 	 * driftQuat, timeAtLastReset and timeForLastReset
 	 */
-	private void calculateDrift() {
-		// TODO add way to get ignore repeated resets and just take most recent
+	public void calculateDrift(Quaternion referenceAdjustedRot) {
+		// TODO add way to ignore repeated resets and just use most recent
 		// within a time window.
+
 		if (timeAtLastReset > 0) {
 			driftQuat
 				.set(
-					rotQuaternion
-						.fromAngles(0f, rotQuaternion.getYaw(), 0f)
-						.mult(lastResetQuat.fromAngles(0f, lastResetQuat.getYaw(), 0f).inverse())
+					new Quaternion()
+						.fromAngles(0f, referenceAdjustedRot.getYaw(), 0f)
+						.mult(new Quaternion().fromAngles(0f, lastResetQuat.getYaw(), 0f).inverse())
 				);
 			driftQuat.inverseLocal();
 
 			timeForLastReset = System.currentTimeMillis() - timeAtLastReset;
 		}
 
-		lastResetQuat.set(rotQuaternion.clone());
+		lastResetQuat.set(referenceAdjustedRot.clone());
 		timeAtLastReset = System.currentTimeMillis();
 	}
 
