@@ -4,7 +4,7 @@
     "connection-lost": "Conexión con el servidor perdida. Intentando reconectar..."
   },
   "tips": {
-    "find-tracker": "¿No sabes cuál tracker es cual? Agita un tracker y se resaltará donde está asignado.",
+    "find-tracker": "¿No sabes cuál sensor es cual? Agita un sensor y se resaltará donde está asignado.",
     "do-not-move-heels": "¡Asegura no mover los talones durante la grabación!"
   },
   "body-part": {
@@ -30,7 +30,7 @@
     "LEFT_FOOT": "Pie izquierdo"
   },
   "skeleton-bone": {
-    "NONE": "None",
+    "NONE": "Sin asignar",
     "HEAD": "Head Shift",
     "NECK": "Neck Length",
     "TORSO": "Torso Length",
@@ -54,23 +54,23 @@
   "reset": {
     "reset-all": "Reiniciar todas las proporciones",
     "full": "Reinicio",
-    "mounting": "Reiniciar montura",
+    "mounting": "Reiniciar sensor",
     "quick": "Reinicio rápido"
   },
   "serial-detection": {
     "new-device.p0": "¡Nuevo dispositivo detectado!" ,
     "new-device.p1": "Ingresa tus credenciales de WiFi",
     "new-device.p2": "Por favor seleciona que quieres hacer con él",
-    "open-wifi": "Conectarse a wifi",
+    "open-wifi": "Conectarse a WiFi",
     "open-serial": "Abrir consola",
-    "submit": "Enviar!",
+    "submit": "¡Enviar!",
     "close": "Cerrar"
   },
   "navbar": {
     "home": "Inicio",
     "body-proportions": "Proporciones de cuerpo",
-    "trackers-assign": "Asignación de trackers",
-    "mounting": "Mounting Calibration",
+    "trackers-assign": "Asignación de sensores",
+    "mounting": "Calibración de sensores",
     "onboarding": "Asistente de configuración",
     "settings": "Ajustes"
   },
@@ -115,44 +115,44 @@
       "url": "Tracker URL"
     },
     "settings": {
-      "back": "Volver a la lista de trackers",
-      "title": "Ajustes de trackers",
+      "back": "Volver a la lista de sensores",
+      "title": "Ajustes de sensores",
       "assignment-section": {
         "title": "Asignación",
-        "description": "Parte del cuerpo asignado al tracker.",
+        "description": "Parte del cuerpo asignado al sensor.",
         "edit": "Editar asignación"
       },
       "mounting-section": {
-        "title": "Posición de montura",
-        "description": "¿Dónde está el Tracker montado?",
-        "edit": "Editar montura"
+        "title": "Posición de sensor",
+        "description": "¿Dónde está el montado el sensor?",
+        "edit": "Editar sensor"
       },
       "name-section": {
-        "title": "Nombre del tracker",
+        "title": "Nombre del sensor",
         "description": "Dale un apodo bonito :)",
         "input-placeholder": "Pierna izquierda de NightyBeast"
       }
     },
     "part-card": {
       "no-name": "Sin nombre",
-      "unassigned": "No asignado"
+      "unassigned": "Sin asignar"
     }
   },
   "body-assignment-menu": {
-    "title": "¿Dónde quieres que esté este Tracker?",
-    "description": "Selecciona la posición donde quieres asignar este Tracker. Alternativamente, puedes escoger administrar todos los Trackers al mismo tiempo en vez de uno por uno.",
+    "title": "¿Dónde quieres que esté este sensor?",
+    "description": "Selecciona la posición donde quieres asignar este sensor. Alternativamente, puedes escoger administrar todos los sensores al mismo tiempo en vez de uno por uno.",
     "show-advanced-locations": "Mostrar posiciones de asignación avanzados",
-    "manage-trackers": "Administrar todos los Trackers",
-    "unassign-tracker": "Tracker no asignado"
+    "manage-trackers": "Administrar todos los sensores",
+    "unassign-tracker": "Sensor no asignado"
   },
   "tracker-selection-menu": {
-    "title": "¿Asignar {{bodyPart}} a qué tracker?",
-    "unassigned": "Trackers sin asignar",
-    "assigned": "Trackers asignados",
+    "title": "¿Asignar {{bodyPart}} a qué sensor?",
+    "unassigned": "Sensores sin asignar",
+    "assigned": "Sensores asignados",
     "dont-assign": "No asignar"
   },
   "mounting-selection-menu": {
-    "title": "¿Dónde estará ubicado el tracker?",
+    "title": "¿Dónde estará ubicado el sensor?",
     "close": "Cerrar"
   },
   "settings": {
@@ -162,7 +162,7 @@
       "tracker-mechanics": "Mecánicas de Trackeo",
       "fk-settings": "Ajustes FK",
       "gesture-control": "Gesture control",
-      "interface": "Interfase",
+      "interface": "Interfaz",
       "osc-router": "***OSC router",
       "utils": "Utilidades",
       "serial": "Consola Serial"
@@ -170,9 +170,9 @@
     "general": {
       "steamvr": {
         "title": "SteamVR",
-        "subtitle": "Trackers en SteamVR",
-        "description.p0": "Habilita o deshabilita trackers de SteamVR en específico.",
-        "description.p1": "Useful for games or apps that only support certain trackers.",
+        "subtitle": "Sensores en SteamVR",
+        "description.p0": "Habilita o deshabilita sensores de SteamVR en específico.",
+        "description.p1": "Útil para juegos o aplicaciones que solo soportan ciertos sensores.",
         "trackers": {
           "waist": "Cintura",
           "chest": "Pecho",
