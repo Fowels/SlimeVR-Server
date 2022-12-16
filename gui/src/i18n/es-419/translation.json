@@ -183,27 +183,27 @@
         }
       },
       "tracker-mechanics": {
-        "title": "Tracker mechanics",
-        "subtitle": "Filtering",
-        "description.p0": "Choose the filtering type for your trackers.",
-        "description.p1": "Prediction predicts movement while smoothing smoothens movement.",
+        "title": "Mecanicas del sensor",
+        "subtitle": "Filtro",
+        "description.p0": "Escoge el tipo de filtro para tus sensores.",
+        "description.p1": "Predicción predice el movimiento, mientras que suavizado suaviza el movimiento.",
         "filtering-type": {
-          "title": "Filtering type",
+          "title": "Tipo de filtro",
           "none": {
-            "label": "No filtering",
-            "description":"Use rotations as is. Will not do any filtering."
+            "label": "Sin filtro",
+            "description":"Usa las rotaciones como son. No utilizará ningún tipo de filtro."
           },
           "smoothing": {
-            "label": "Smoothing",
-            "description":"Smooths movements but adds some latency."
+            "label": "Suavizado",
+            "description":"Suaviza el movimiento, pero agrega latencia."
           },
           "prediction": {
-            "label": "Prediction",
-            "description":"Reduces latency and makes movements more snappy, but may increase jitter."
+            "label": "Predicción",
+            "description":"Reduce latencia y hace el movimiento mas responsivo, pero puede incrementar su inestabilidad."
           }
         },
         "amount": {
-          "label": "Amount"
+          "label": "Monto"
         }
       },
       "fk-settings": {
@@ -221,11 +221,11 @@
           "force-arms": "Force arms from HMD"
         },
         "skeleton-settings": {
-          "title": "Skeleton settings",
-          "description": "Toggle skeleton settings on or off. It is recommended to leave these on.",
-          "extended-spine": "Extended spine",
-          "extended-pelvis": "Extended pelvis",
-          "extended-knees": "Extended knee"
+          "title": "Ajustes del esqueleto",
+          "description": "Activa o desactiva los ajustes del esqueleto. Se recomienda que se dejen activadas.",
+          "extended-spine": "Columna extendida",
+          "extended-pelvis": "Pelvis extendida",
+          "extended-knees": "Rodillas extendidas"
         }
       },
       "gesture-control": {
@@ -243,14 +243,14 @@
           "label": "Developer Mode"
         },
         "serial-detection": {
-          "title": "Serial device detection",
-          "description": "This option will show a pop-up every time you plug a new serial device that could be a tracker. It helps improving the setup process of a tracker",
-          "label": "Serial device detection"
+          "title": "Detección de dispositivo serial",
+          "description": "Esta opción mostrará una notificación cada vez que conectes un nuevo dispositivo serial que podría funcionar como sensor. Esto ayuda a mejorar el proceso de configuración de un sensor",
+          "label": "Detección de dispositivo serial"
         },
         "lang": {
-          "title": "Select language",
-          "description": "Change the default language you want to use",
-          "placeholder": "Select the language to use"
+          "title": "Selecciona idioma",
+          "description": "Cambia el idioma por defecto que quieres usar",
+          "placeholder": "Selecciona el idioma a usar"
         }
       }
     },
@@ -268,29 +268,29 @@
     "osc": {
       "router": {
         "title": "OSC router",
-        "description.p0": "Forward OSC messages from another program.",
-        "description.p1": "Useful for using another OSC program with VRChat for example.",
+        "description.p0": "Redirige mensajes OSC desde otro programa.",
+        "description.p1": "Útil para usar otro programa OSC con VRChat por ejemplo.",
         "enable": {
-          "title": "Enable",
-          "description": "Toggle the forwarding of messages",
-          "label": "Enable"
+          "title": "Activar",
+          "description": "Activar el redireccionamiento de mensajes",
+          "label": "Activar"
         },
         "network": {
-          "title": "Network ports",
-          "description.p0": "Set the ports for listening and sending data",
-          "description.p1": "These can be the same as other ports used in the SlimeVR server",
+          "title": "Puertos de conexión",
+          "description.p0": "Establece los puertos para recibir y enviar datos",
+          "description.p1": "Estos pueden ser los mismos que otros puertos utilizados en el servidor de SlimeVR",
           "port-in": {
-            "label": "Port In",
-            "placeholder": "Port in (default: 9002)"
+            "label": "Puerto de entrada",
+            "placeholder": "Puerto de entrada (Por defecto: 9002)"
           },
           "port-out": {
-            "label": "Port Out",
-            "placeholder": "Port out (default: 9000)"
+            "label": "Puerto de salida",
+            "placeholder": "Puerto de salida (Por defecto: 9000)"
           },
           "address": {
-            "title": "Network address",
-            "description": "Set the address to send out data at",
-            "placeholder": "IPV4 address"
+            "title": "Dirección de conexión",
+            "description": "Establece la direccion al cuál enviar datos",
+            "placeholder": "Dirección IPv4"
           }
         }
       },
