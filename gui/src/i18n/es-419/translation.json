@@ -159,9 +159,9 @@
     "sidebar": {
       "title": "Ajustes",
       "general": "General",
-      "tracker-mechanics": "Mecánicas de Trackeo",
+      "tracker-mechanics": "Mecánicas de sensores",
       "fk-settings": "Ajustes FK",
-      "gesture-control": "Gesture control",
+      "gesture-control": "Control de gestos",
       "interface": "Interfaz",
       "osc-router": "***OSC router",
       "utils": "Utilidades",
@@ -298,20 +298,20 @@
         "description.p0": "Change VRChat-specific settings to receive HMD data and send",
         "description.p1": "trackers data for FBT (works on Quest standalone).",
         "enable": {
-          "title": "Enable",
-          "description": "Toggle the sending and receiving of data",
-          "label": "Enable"
+          "title": "Activar",
+          "description": "Activa el envío y recepción de datos",
+          "label": "Activar"
         },
         "network": {
-          "title": "Network ports",
-          "description": "Set the ports for listening and sending data to VRChat",
+          "title": "Puertos de conexión",
+          "description": "Establece los puertos para enviar y recibir datos de VRChat",
           "port-in": {
-            "label": "Port In",
-            "placeholder": "Port in (default: 9001)"
+            "label": "Puerto de entrada",
+            "placeholder": "Puerto de entrada (Por defecto: 9001)"
           },
           "port-out": {
-            "label": "Port Out",
-            "placeholder": "Port out (default: 9000)"
+            "label": "Puerto de salida",
+            "placeholder": "Puerto de salida (Por defecto: 9000)"
           },
           "address": {
             "title": "Network address",
@@ -319,81 +319,81 @@
             "placeholder": "VRChat ip address"
           },
           "trackers": {
-            "title": "Trackers",
-            "description": "Toggle the sending and receiving of data",
-            "chest": "Chest",
-            "waist": "Waist",
-            "knees": "Knees",
-            "feet": "Feet",
-            "elbows": "Elbows"
+            "title": "Sensores",
+            "description": "Activa el envío y recepción de datos",
+            "chest": "Pecho",
+            "waist": "Cintura",
+            "knees": "Rodillas",
+            "feet": "Pies",
+            "elbows": "Codos"
           }
         }
       }
     }
   },
   "onboarding": {
-    "skip": "Skip setup",
-    "continue": "Continue",
-    "wip": "Work in progress",
+    "skip": "Saltar configuración",
+    "continue": "Continuar",
+    "wip": "Trabajo en progreso",
     "wifi-creds": {
-      "back": "Go Back to introduction",
-      "title": "Input WiFi credentials",
-      "description.p0": "The Trackers will use these credentials to connect wirelessly",
-      "description.p1": "please use the credentials that you are currently connected to",
-      "skip": "Skip wifi settings",
-      "submit": "Submit!"
+      "back": "Volver a la introducción",
+      "title": "Escribe las credenciales de WiFi",
+      "description.p0": "Los sensores utilizarán estas credenciales para conectarse inalambricamente",
+      "description.p1": "Por favor usa las credenciales a las cuales estás actualmente conectado",
+      "skip": "Saltar ajustes de WiFi",
+      "submit": "¡Enviar!"
     },
     "reset-tutorial": {
-      "back": "Go Back to Mounting calibration",
-      "title": "Reset tutorial",
-      "description": "This feature isn't done, just press continue"
+      "back": "Volver a la calibración de los sensores",
+      "title": "Reiniciar tutorial",
+      "description": "Esta característica no esta lista, presiona continuar"
     },
     "home": {
-      "title": "Welcome to SlimeVR",
-      "description.p0": "Bringing full-body tracking",
-      "description.p1": "to everyone",
-      "start": "Lets get set up!"
+      "title": "Bienvenido a SlimeVR",
+      "description.p0": "Acercando el tracking",
+      "description.p1": "de cuerpo completo para todos",
+      "start": "¡Comencemos!"
     },
     "enter-vr": {
-      "back": "Go Back to Tracker assignent",
-      "title": "Time to enter VR!",
-      "description": "Put on all your trackers and then enter VR!",
-      "ready": "I'm ready"
+      "back": "Volver a la asignación de sensores",
+      "title": "¡Hora de entrar a VR!",
+      "description": "¡Ponte todos tus sensores y luego entra a VR!",
+      "ready": "Estoy listo"
     },
     "done": {
-      "title": "You're all set!",
-      "description": "Enjoy your full body experience",
-      "close": "Close the guide"
+      "title": "¡Estas listo!",
+      "description": "Disfruta tu experiencia de cuerpo completo",
+      "close": "Cerrar la guía"
     },
     "connect-tracker": {
-      "back": "Go Back to WiFi credentials",
-      "title": "Connect trackers",
-      "description.p0": "Now onto the fun part, connecting all the trackers!",
-      "description.p1": "Simply connect all that aren't connected yet, through a USB port.",
+      "back": "Volver a las credenciales de WiFi",
+      "title": "Conectar sensores",
+      "description.p0": "Ahora la parte divertida, ¡Conectar todos los sensores!",
+      "description.p1": "Solamente conecta todos los sensores que no estén conectados, mediante un puerto USB.",
       "issue": {
-        "serial": "I'm having trouble connecting!"
+        "serial": "¡Tengo problemas conectandome!"
       },
-      "usb": "USB Tracker",
+      "usb": "Sensor USB",
       "connection-status": {
-        "connecting": "Sending wifi credentials",
-        "connected": "Connected to WiFi",
-        "error": "Unable to connect to Wifi",
-        "start-connecting": "Looking for trackers",
-        "handshake": "Connected to the Server"
+        "connecting": "Enviando credenciales WiFi",
+        "connected": "Conectado a WiFi",
+        "error": "Incapaz de conectarse a WiFi",
+        "start-connecting": "Buscando sensores",
+        "handshake": "Conectado al servidor"
       },
-      "connected-trackers": "{{amount}} trackers connected",
-      "next": "I connected all my trackers"
+      "connected-trackers": "{{amount}} sensores conectados",
+      "next": "Conecté todos mis sensores"
     },
     "assign-trackers": {
-      "back": "Go Back to Wifi Credentials",
-      "title": "Assign trackers",
-      "description": "Let's choose which tracker goes where. Click on a location where you want to place a tracker",
-      "assigned": "{{assigned}} of {{trackers}} trackers assigned",
-      "advanced": "Show advanced assign locations",
-      "next": "I assigned all the trackers"
+      "back": "Volver a las credenciales de WiFi",
+      "title": "Asignar sensores",
+      "description": "Escojamos cuál sensor va donde. Presiona una ubicación donde quieres colocar un sensor",
+      "assigned": "{{assigned}} de {{trackers}} sensores asignados",
+      "advanced": "Mostrar ubicaciones de asignación avanzadas",
+      "next": "He asignado todos los sensores"
     },
     "manual-mounting": {
-      "back": "Go Back to Enter VR",
+      "back": "Volver a entrar a VR",
       "title": "Manual Mounting",
       "description": "Click on every tracker and select which way they are mounted",
       "auto-mounting": "Automatic mounting",
@@ -419,16 +419,16 @@
         }
       },
       "preparation": {
-        "title": "Preparation",
+        "title": "Preparación",
         "step": {
-          "0": "1. Stand upright with your arms to your sides.",
-          "1": "2. Press the \"Reset\" button and wait for 3 seconds before the trackers will reset."
+          "0": "1. Párate recto con tus brazos a los lados.",
+          "1": "2. Presiona el boton \"Reiniciar\" y espera 3 segundos hasta que los sensores se reinicien."
         }
       },
       "put-trackers-on": {
-        "title": "Put on your trackers",
-        "description": "To calibrate mounting rotations, we're gonna use the trackers you just assigned. Put on all your trackers, you can see which are which in the figure to the right.",
-        "next": "I have all my trackers on"
+        "title": "Colócate los sensores",
+        "description": "Para calibrar la rotación de los sensores, usaremos los sensores que asignaste. Colócate todos los sensores, puedes ver cuál es cuál en la figura de la derecha.",
+        "next": "Tengo todos mis sensores puestos"
       }
     },
     "manual-proportions": {
@@ -438,55 +438,55 @@
       "auto": "Automatic calibration"
     },
     "automatic-proportions": {
-      "back": "Go Back to Reset tutorial",
-      "title": "Measure your body",
-      "description": "For SlimeVR trackers to work, we need to know the length of your bones. This short calibration will measure it for you.",
-      "manual": "Manual calibration",
-      "prev-step": "Previous step",
+      "back": "Volver al tutorial de reinicio",
+      "title": "Mide tu cuerpo",
+      "description": "Para que los sensores de SlimeVR funcionen, necesitamos saber el largo de tus huesos. Esta corta calibración los medirá por ti.",
+      "manual": "Calibración manual",
+      "prev-step": "Paso anterior",
       "put-trackers-on": {
-        "title": "Put on your trackers",
-        "description": "To calibrate your proportions, we're gonna use the trackers you just assigned. Put on all your trackers, you can see which are which in the figure to the right.",
-        "next": "I have all my trackers on"
+        "title": "Colócate los sensores",
+        "description": "Para calibrar la rotación de los sensores, usaremos los sensores que asignaste. Colócate todos los sensores, puedes ver cuál es cuál en la figura de la derecha.",
+        "next": "Tengo todos mis sensores puestos"
       },
       "preparation": {
-        "title": "Preparation",
-        "description": "Place a chair directly behind you inside your play space. Be prepared to sit down during the autobone setup.",
-        "next": "I am in front of a chair"
+        "title": "Preparación",
+        "description": "Coloca una silla directamente detrás de ti, dentro de tu área de juego. Prepárate para sentarte durante la configuración del autobone.",
+        "next": "Estoy frente a una silla"
       },
       "start-recording": {
-        "title": "Get ready to move",
-        "description": "We're now going to record some specific poses and moves. These will be prompted in the next screen. Be ready to start when the button is pressed!",
-        "next": "Start Recording"
+        "title": "Prepárate para moverte",
+        "description": "ahora vamos a grabar algunas poses y movimientos especificos.Estos se mostrarán en la siguiente pantalla. ¡Prepárate para comenzar cuando presiones el botón!",
+        "next": "Comenzar grabación"
       },
       "recording": {
         "title": "REC",
-        "description.p0": "Recording in progress...",
-        "description.p1": "Make the moves shown below:",
+        "description.p0": "Grabación en progreso...",
+        "description.p1": "Muévete como se muestra debajo:",
         "steps": {
-          "0": "Bend knees a few times.",
-          "1": "Sit on a chair then stand up.",
-          "2": "Twist upper body left, then bend right.",
-          "3": "Twist upper body right, then bend left.",
-          "4": "Wiggle around until timer ends."
+          "0": "Dobla tus rodillas unas cuantas veces.",
+          "1": "Siéntate en una silla y luego párate.",
+          "2": "Gira la parte superior de tu cuerpo hacia la izquierda, luego dóblate hacia la derecha.",
+          "3": "Gira la parte superior de tu cuerpo hacia la derecha, luego dóblate hacia la izquierda.",
+          "4": "Menéate hasta que el temporizador termine."
         },
-        "processing": "Processing the result",
-        "timer": "{{time}} seconds left"
+        "processing": "Procesando el resultado",
+        "timer": "{{time}} segundos restantes"
       },
       "verify-results": {
-        "title": "Verify results",
-        "description": "Check the results below, do they look correct?",
-        "results": "Recording results",
-        "processing": "Processing the result",
-        "redo": "Redo recording",
-        "confirm": "They're correct"
+        "title": "Verifica los resultados",
+        "description": "Verifica los resultados de abajo, ¿se ven bien?",
+        "results": "Grabando resultados",
+        "processing": "Procesando el resultado",
+        "redo": "Rehacer grabación",
+        "confirm": "Están bien"
       },
       "done": {
-        "title": "Body measured and saved.",
-        "description": "Your body proportions calibration is complete!"
+        "title": "Cuerpo medido y guardado.",
+        "description": "¡La calibración de tus proporciones corporales está completa!"
       }
     }
   },
   "home": {
-    "no-trackers": "No hay trackers detectados o asignados"
+    "no-trackers": "No hay sensores detectados o asignados"
   }
 }
