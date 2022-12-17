@@ -26,30 +26,30 @@
     "LEFT_LOWER_ARM": "Antebrazo izquierdo",
     "LEFT_HAND": "Mano izquierda",
     "LEFT_UPPER_LEG": "Muslo izquierdo",
-    "LEFT_LOWER_LEG": "Pantorrilla izquierdo",
+    "LEFT_LOWER_LEG": "Pantorrilla izquierda",
     "LEFT_FOOT": "Pie izquierdo"
   },
   "skeleton-bone": {
     "NONE": "Sin asignar",
-    "HEAD": "Head Shift",
-    "NECK": "Neck Length",
-    "TORSO": "Torso Length",
-    "CHEST": "Chest Distance",
-    "WAIST": "Waist Distance",
-    "HIP_OFFSET": "Hip Offset",
+    "HEAD": "Inclinación de la cabeza",
+    "NECK": "Largo del cuello",
+    "TORSO": "Largo del torso",
+    "CHEST": "Distancia del pecho",
+    "WAIST": "Distancia de la cintura",
+    "HIP_OFFSET": "Desplazamiento de las caderas",
     "HIPS_WIDTH": "Ancho de caderas",
     "LEGS_LENGTH": "Largo de piernas",
     "KNEE_HEIGHT": "Altura de rodillas",
     "FOOT_LENGTH": "Largo de pies",
-    "FOOT_SHIFT": "Foot Shift",
-    "SKELETON_OFFSET": "Skeleton Offset",
-    "CONTROLLER_DISTANCE_Z": "Controller Distance Z",
-    "CONTROLLER_DISTANCE_Y": "Controller Distance Y",
-    "FOREARM_LENGTH": "Forearm Distance",
-    "SHOULDERS_DISTANCE": "Shoulders Distance",
-    "SHOULDERS_WIDTH": "Shoulders Width",
-    "UPPER_ARM_LENGTH": "Upper Arm Length",
-    "ELBOW_OFFSET": "Elbow Offset"
+    "FOOT_SHIFT": "Inclinación de pies",
+    "SKELETON_OFFSET": "Desplazamiento del esqueleto",
+    "CONTROLLER_DISTANCE_Z": "Distancia Z del mando",
+    "CONTROLLER_DISTANCE_Y": "Distancia Y del mando",
+    "FOREARM_LENGTH": "Distancia del antebrazo",
+    "SHOULDERS_DISTANCE": "Distancia de los hombros",
+    "SHOULDERS_WIDTH": "Ancho de los hombros",
+    "UPPER_ARM_LENGTH": "Largo del brazo superior",
+    "ELBOW_OFFSET": "Desplazamiento de los codos"
   },
   "reset": {
     "reset-all": "Reiniciar todas las proporciones",
@@ -68,7 +68,7 @@
   },
   "navbar": {
     "home": "Inicio",
-    "body-proportions": "Proporciones de cuerpo",
+    "body-proportions": "Proporciones corporales",
     "trackers-assign": "Asignación de sensores",
     "mounting": "Calibración de sensores",
     "onboarding": "Asistente de configuración",
@@ -112,7 +112,7 @@
       "manufacturer": "Fabricante",
       "display-name": "Nombre",
       "custom-name": "Nombre personalizado",
-      "url": "Tracker URL"
+      "url": "URL del sensor"
     },
     "settings": {
       "back": "Volver a la lista de sensores",
@@ -163,7 +163,7 @@
       "fk-settings": "Ajustes FK",
       "gesture-control": "Control de gestos",
       "interface": "Interfaz",
-      "osc-router": "***OSC router",
+      "osc-router": "Router OSC",
       "utils": "Utilidades",
       "serial": "Consola Serial"
     },
@@ -267,7 +267,7 @@
     },
     "osc": {
       "router": {
-        "title": "OSC router",
+        "title": "Router OSC",
         "description.p0": "Redirige mensajes OSC desde otro programa.",
         "description.p1": "Útil para usar otro programa OSC con VRChat por ejemplo.",
         "enable": {
