@@ -207,7 +207,7 @@
         }
       },
       "fk-settings": {
-        "title": "FK settings",
+        "title": "Ajustes de FK",
         "leg-tweak": {
           "title": "Leg tweaks",
           "description": "Floor-clip can Reduce or even eliminates clipping with the floor but may cause problems when on your knees. Skating-correction corrects for ice skating, but can decrease accuracy in certain movement patterns.",
@@ -216,9 +216,9 @@
           "skating-correction-amount": "Skating correction strength"
         },
         "arm-fk": {
-          "title": "Arm FK",
-          "description": "Change the way the arms are tracked.",
-          "force-arms": "Force arms from HMD"
+          "title": "FK de brazos",
+          "description": "Cambia la manera en la que se trackean los brazos.",
+          "force-arms": "Fuerza los brazos desde el casco vr"
         },
         "skeleton-settings": {
           "title": "Ajustes del esqueleto",
@@ -229,18 +229,18 @@
         }
       },
       "gesture-control": {
-        "title": "Gesture control",
-        "subtitle": "Double Tap quick reset",
-        "description": "Enable or disable double tap quick reset. When enabled double tapping anywhere on the highest torso tracker will activate a quick reset. Delay is the time between registering a tap and resetting.",
-        "enable": "Double tap quick reset",
-        "delay": "Delay"
+        "title": "Control de gestos",
+        "subtitle": "Reinicio rápido por toque doble",
+        "description": "Activa o desactiva el reinicio rápido por toque doble. Cuando está activado, toca dos veces cualquier lugar del sensor mas alto del torso para activar el reinicio rápido. El retraso es el tiempo entre registrar un toque y el reinicio.",
+        "enable": "Reinicio rápido por toque doble",
+        "delay": "Retraso"
       },
       "interface": {
-        "title": "Interface",
+        "title": "Interfaz",
         "dev-mode": {
-          "title": "Developer Mode",
-          "description": "This mode can be useful if you need in-depth data or to interact with connected trackers on a more advanced level",
-          "label": "Developer Mode"
+          "title": "Modo de desarrollador",
+          "description": "Este modo puede ser útil si necesitas datos en profundidad o interactuar con sensores conectados a un nivel mas avanzado",
+          "label": "Modo de desarrollador"
         },
         "serial-detection": {
           "title": "Detección de dispositivo serial",
@@ -255,15 +255,15 @@
       }
     },
     "serial": {
-      "title": "Serial Console",
-      "description.p0": "This is a live information feed for serial communication.",
-      "description.p1": "May be useful if you need to know the firmware is acting up.",
-      "connection-lost": "Connection to serial lost, Reconnecting...",
-      "reboot": "Reboot",
-      "factory-reset": "Factory Reset",
-      "get-infos": "Get Infos",
-      "serial-select": "Select a serial port",
-      "auto-dropdown-item": "Auto"
+      "title": "Consola serial",
+      "description.p0": "Este es un muro de información en vivo para la comunicación serial.",
+      "description.p1": "Puede ser útil si necesitas saber si el firmware tiene problemas.",
+      "connection-lost": "Conexión serial perdida, reconectando...",
+      "reboot": "Reiniciar",
+      "factory-reset": "Restaurar valores por defecto",
+      "get-infos": "Obtener información",
+      "serial-select": "Selecciona un puerto serial",
+      "auto-dropdown-item": "Automático"
     },
     "osc": {
       "router": {
@@ -295,8 +295,8 @@
         }
       },
       "vrchat": {
-        "description.p0": "Change VRChat-specific settings to receive HMD data and send",
-        "description.p1": "trackers data for FBT (works on Quest standalone).",
+        "description.p0": "Cambia ajustes específicos de VRChat para recibir datos del casco vr y enviar",
+        "description.p1": "datos de los sensores para tracking de cuerpo completo (funciona de manera independiente en Quest).",
         "enable": {
           "title": "Activar",
           "description": "Activa el envío y recepción de datos",
@@ -314,9 +314,9 @@
             "placeholder": "Puerto de salida (Por defecto: 9000)"
           },
           "address": {
-            "title": "Network address",
-            "description": "Choose which address to send out data to VRChat (check your wifi settings on your device)",
-            "placeholder": "VRChat ip address"
+            "title": "Dirección de conexión",
+            "description": "Escoge a qué dirección enviar datos a VRChat (verifica los ajustes de wifi en tu dispositivo)",
+            "placeholder": "Dirección IP de VRChat"
           },
           "trackers": {
             "title": "Sensores",
@@ -394,28 +394,28 @@
     },
     "manual-mounting": {
       "back": "Volver a entrar a VR",
-      "title": "Manual Mounting",
-      "description": "Click on every tracker and select which way they are mounted",
-      "auto-mounting": "Automatic mounting",
-      "next": "Next step"
+      "title": "Montura manual",
+      "description": "Has clic en cada sensor y selecciona en que dirección están montados",
+      "auto-mounting": "Montura automática",
+      "next": "Siguiente paso"
     },
     "automatic-mounting": {
-      "back": "Go Back to Enter VR",
-      "title": "Mounting Calibration",
-      "description": "For SlimeVR trackers to work, we need to assign a mounting rotation to your trackers to align them with your physical tracker mounting.",
-      "manual-mounting": "Manually set mounting",
-      "next": "Next step",
-      "prev-step": "Previous step",
+      "back": "Volver a entrar a VRGo Back to Enter VR",
+      "title": "Calibración de montura",
+      "description": "Para que los sensores de SlimeVR funcionen, debemos asignar una rotación a la montura de tus sensores para alinearlos con tus sensores físicos.",
+      "manual-mounting": "Establecer montura manualmente",
+      "next": "Siguiente paso",
+      "prev-step": "Paso anterior",
       "done": {
-        "title": "Mounting rotations calibrated.",
-        "description": "Your mounting calibration is complete!",
-        "restart": "Return to start"
+        "title": "Rotaciones de montura calibradas.",
+        "description": "¡Tu calibración de montura está completa!",
+        "restart": "Volver al inicio"
       },
       "mounting-reset": {
-        "title": "Mounting Reset",
+        "title": "Reinicio de montura",
         "step": {
-          "0": "1. Squat in a \"skiing\" pose with your legs bent, your upper body tilted forwards, and your arms bent.",
-          "1": "2. Press the \"Reset Mounting\" button and wait for 3 seconds before the trackers' mounting rotations will reset."
+          "0": "1. Agáchate en una posición de \"esqui\" con tus piernas dobladas, tu torso inclinado hacia delante y tus brazos doblados.",
+          "1": "2. Presiona el botón \"Reiniciar montura\" y espera por 3 segundos hasta que la montura de los sensores se reinicie."
         }
       },
       "preparation": {
@@ -432,10 +432,10 @@
       }
     },
     "manual-proportions": {
-      "back": "Go Back to Reset tutorial",
-      "title": "Manual Body Proportions",
-      "precision": "Precision adjust",
-      "auto": "Automatic calibration"
+      "back": "Volver al tutorial de reinicio",
+      "title": "Proporciones corporales manuales",
+      "precision": "Ajuste de precisión ",
+      "auto": "Calibración automática"
     },
     "automatic-proportions": {
       "back": "Volver al tutorial de reinicio",
