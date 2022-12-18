@@ -31,7 +31,7 @@
   },
   "skeleton-bone": {
     "NONE": "Sin asignar",
-    "HEAD": "Inclinación de la cabeza",
+    "HEAD": "Cabeza",
     "NECK": "Largo del cuello",
     "TORSO": "Largo del torso",
     "CHEST": "Distancia del pecho",
